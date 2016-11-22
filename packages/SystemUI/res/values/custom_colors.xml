@@ -65,4 +65,8 @@
 
     <!-- Quicksettings main QS background-->
     <color name="quick_settings_status_bar_background_color">#ff000000</color>
+
+    <!-- Recents membar text color -->
+    <color name="recents_membar_text_color">@android:color/white</color>
+
 </resources>
