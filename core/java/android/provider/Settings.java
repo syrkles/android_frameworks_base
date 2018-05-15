@@ -7199,6 +7199,16 @@ public final class Settings {
         public static final int LOCATION_CHANGER_QUICK_SETTINGS = 2;
 
         /**
+         * Setting to configure Wifi disconnect delay duration in seconds.
+         * @hide
+         **/
+        public static final String WIFI_DISCONNECT_DELAY_DURATION =
+                "wifi_disconnect_delay_duration";
+
+        private static final Validator WIFI_DISCONNECT_DELAY_DURATION_VALIDATOR =
+                NON_NEGATIVE_INTEGER_VALIDATOR;
+
+        /**
          * Location access disabled.
          *
          * @deprecated To check location status, use {@link LocationManager#isLocationEnabled()}. To
@@ -9682,7 +9692,8 @@ public final class Settings {
             MANUAL_RINGER_TOGGLE_COUNT,
             HUSH_GESTURE_USED,
             STATUS_BAR_BATTERY_STYLE,
-            FP_SWIPE_TO_DISMISS_NOTIFICATIONS
+            FP_SWIPE_TO_DISMISS_NOTIFICATIONS,
+            WIFI_DISCONNECT_DELAY_DURATION
         };
 
         /**
@@ -9831,6 +9842,7 @@ public final class Settings {
             VALIDATORS.put(MANUAL_RINGER_TOGGLE_COUNT, MANUAL_RINGER_TOGGLE_COUNT_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(FP_SWIPE_TO_DISMISS_NOTIFICATIONS, FP_SWIPE_TO_DISMISS_NOTIFICATIONS_VALIDATOR);
+            VALIDATORS.put(WIFI_DISCONNECT_DELAY_DURATION, WIFI_DISCONNECT_DELAY_DURATION_VALIDATOR);
         }
 
         /**
